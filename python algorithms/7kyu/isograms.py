@@ -5,3 +5,5 @@ def is_isogram(string):
         return True
     else:
         return False
+    
+# could be condensed more but this is very readable in my opinion
