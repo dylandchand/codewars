@@ -13,6 +13,10 @@
 # Signature will always contain 3 numbers; n will always be a non-negative number; if n == 0, then return an empty array (except in C return NULL) and be ready for anything else which is not clearly specified ;)
 
 def tribonacci(signature, n):
-  res = signature[:n]
-  for i in range(n - 3): res.append(sum(res[-3:]))
-  return res
+    # initial result list
+    res = signature[:n]
+    
+    # generate next n-3 numbers using tribonacci formula
+    for i in range(n - 3): res.append(sum(res[-3:]))
+    
+    return res
